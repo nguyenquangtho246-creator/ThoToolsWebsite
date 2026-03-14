@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThoTools - Made 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/可靠/js/all.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .glass-card { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .blue-gradient { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); }
+        .btn-hover { transition: all 0.3s ease; }
+        .btn-hover:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(59, 130, 246, 0.4); }
+        .section-fade { transition: opacity 0.5s ease; }
+    </style>
+</head>
+<body class="bg-[#0b1120] text-white">
+
+    <nav class="fixed w-full z-50 px-6 py-4 flex justify-between items-center glass-card">
+        <div class="text-2xl font-bold tracking-tighter text-blue-400">ThoTools</div>
+        <div class="flex items-center gap-4">
+            <select id="langSelect" class="bg-gray-800 text-sm border border-blue-500 rounded px-2 py-1 outline-none">
+                <option value="vi">Tiếng Việt</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+    </nav>
+
+    <section id="home" class="min-h-screen flex items-center px-10 pt-20">
+        <div class="grid md:grid-cols-2 gap-10 items-center w-full">
+            <div class="space-y-6">
+                <h1 class="text-6xl font-extrabold" id="heroTitle">ThoTools</h1>
+                <p class="text-gray-400 text-lg" id="heroDesc">Công cụ mà bạn đang cần mà nếu chưa cần thì đợi nào rồi dùng thôi!!!</p>
+                <a href="#main-app" class="inline-block px-8 py-3 blue-gradient rounded-lg font-semibold btn-hover" id="btnStart">Bắt đầu ngay</a>
+            </div>
+            <div class="flex justify-center">
+                <div class="relative w-80 h-80 blue-gradient rounded-3xl rotate-3 flex items-center justify-center shadow-2xl overflow-hidden">
+                    <div class="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+                    <i class="fas fa-microchip text-8xl text-white/50 animate-pulse"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-10">
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="glass-card p-8 rounded-2xl text-center btn-hover">
+                <i class="fas fa-shield-alt text-4xl text-blue-500 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2" id="feat1">Bảo Mật</h3>
+                <p class="text-gray-400 text-sm" id="desc1">ThoTools được bảo mật tuyệt đối với mã hóa, ẩn danh, ngăn các cuộc tấn công.</p>
+            </div>
+            <div class="glass-card p-8 rounded-2xl text-center btn-hover">
+                <i class="fas fa-check-circle text-4xl text-green-500 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2" id="feat2">Uy Tín</h3>
+                <p class="text-gray-400 text-sm" id="desc2">ThoTools đảm bảo cho bạn công cụ uy tín, được tin tưởng và đặt cái tâm lên hàng đầu.</p>
+            </div>
+            <div class="glass-card p-8 rounded-2xl text-center btn-hover">
+                <i class="fas fa-gem text-4xl text-purple-500 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2" id="feat3">Chất Lượng</h3>
+                <p class="text-gray-400 text-sm" id="desc3">ThoTools đem đến cho bạn những thông tin, công cụ chất lượng khiến người dùng phải ngạc nhiên!</p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="border-gray-800">
+
+    <section id="main-app" class="min-h-screen py-20 px-10">
+        <h2 class="text-3xl font-bold text-center mb-12 text-blue-400" id="sectionTitle">Dịch Vụ Của Chúng Tôi</h2>
+        
+        <div class="max-w-4xl mx-auto mb-16">
+            <h3 class="text-xl mb-6 opacity-70" id="contactTitle italic"><i class="fas fa-link mr-2"></i>Liên Hệ & Xác Minh</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <a href="https://discord.gg/66wjMuwqYq" target="_blank" class="flex items-center gap-4 bg-[#5865F2] p-4 rounded-xl btn-hover">
+                    <i class="fab fa-discord text-3xl"></i>
+                    <div>
+                        <p class="font-bold">Discord Server</p>
+                        <p class="text-xs opacity-80">Tham gia cộng đồng hỗ trợ</p>
+                    </div>
+                </a>
+                <a href="https://notevn.com/share/2gf7phck" target="_blank" class="flex items-center gap-4 bg-emerald-600 p-4 rounded-xl btn-hover">
+                    <i class="fas fa-check-double text-3xl"></i>
+                    <div>
+                        <p class="font-bold" id="checkRep">Check Uy Tín</p>
+                        <p class="text-xs opacity-80">Check uy tín đã hỗ trợ</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-xl mb-6 opacity-70"><i class="fas fa-tools mr-2"></i>Tools & Scripts</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="glass-card p-6 rounded-2xl border-l-4 border-blue-500">
+                    <h4 class="font-bold mb-2">Get Client (Executor)</h4>
+                    <p class="text-sm text-gray-400 mb-4">Link Client Executor Roblox Game.</p>
+                    <a href="https://link4sub.com/note/AR7G" class="text-blue-400 font-semibold hover:underline">Lấy liên kết -></a>
+                </div>
+                <div class="glass-card p-6 rounded-2xl border-l-4 border-blue-500">
+                    <h4 class="font-bold mb-2">Blox Fruits Notifier</h4>
+                    <p class="text-sm text-gray-400 mb-4">Thêm Notifier Blox Fruits vào máy chủ của bạn</p>
+                    <a href="https://discord.com/users/1141686701413126174" class="text-blue-400 font-semibold hover:underline">Thêm vào Discord -></a>
+                </div>
+            </div>
+            <div class="mt-10 text-center text-gray-500 italic">
+                <p id="updatingText">Đang Trong Quá Trình Cập Nhật...</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-gray-600 text-sm">
+        &copy; 2026 ThoTools. All Rights Reserved. <br>
+        <span id="userIpText">IP...</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
